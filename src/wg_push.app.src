@@ -4,7 +4,16 @@
   {description, "working with Apple Push Notification Service"},
   {vsn, "2.0"},
   {registered, []},
-  {applications, [kernel, stdlib]},
+  {applications,
+    [
+      kernel,
+      stdlib,
+      crypto,
+      asn1,
+      public_key,
+      ssl,
+      jiffy
+    ]},
   {mod, {wg_push_app, []}},
   {env, [{apns_host, "gateway.sandbox.push.apple.com"},
          {apns_port, 2195}

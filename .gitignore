@@ -1,3 +1,4 @@
+/wg_push.iml
 *.beam
 .eunit
 deps
