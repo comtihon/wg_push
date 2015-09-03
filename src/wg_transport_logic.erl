@@ -50,6 +50,7 @@ build_ssl_options(Config) ->
       ({port, _}) -> false;
       ({on_retry, _}) -> false;
       ({on_error, _}) -> false;
+      ({name, _}) -> false;
       ({_, undefined}) -> false;
       (_) -> true
     end,
