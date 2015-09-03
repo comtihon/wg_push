@@ -48,6 +48,8 @@ build_ssl_options(Config) ->
     fun
       ({host, _}) -> false;
       ({port, _}) -> false;
+      ({on_retry, _}) -> false;
+      ({on_error, _}) -> false;
       ({_, undefined}) -> false;
       (_) -> true
     end,
